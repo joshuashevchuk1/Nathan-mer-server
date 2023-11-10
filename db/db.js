@@ -9,7 +9,7 @@ function getDb(){
 
 function connect() {
     return new Promise((resolve, reject) => {
-        let mongoUri = `mongodb://localhost:27017/${mongoSettings.dbName}`
+        let mongoUri = `mongodb://${mongoSettings.host}:27017/${mongoSettings.dbName}`
         mongoose.connect(mongoUri).then((res, err) => {
             /* istanbul ignore if */
             if (err) {
