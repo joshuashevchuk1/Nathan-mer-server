@@ -2,8 +2,6 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 const config = require('../config/config.js')
 
-// update Schema with company name WINDENG-4775
-
 const perrySchema = new Schema({
     perryName: {
         type: String,
